@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <!-- Link external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,13 +35,42 @@
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
-                <li>CSS</li>
-                <p>I am still currently learning sets of skills, i only know the basics for now. </p>
             </ul>
+            <p>I am still currently learning sets of skills, i only know the basics for now. </p>
+        </section>
+        <section>
+            <h2>Random things</h2>
+            <img src="https://www.pexels.com/photo/boys-playing-soccer-on-the-field-11963252/"    alt="bullshit" width="300">
+            <form>
+                <label for="thoughtsInput">Your Thoughts:</label>
+                <input type="text" placeholder="Enter your thoughts here..." id="thoughtsInput">
+                <input type="radio" id="like" name="feedback" value="like" checked>
+                <label for="like">Like</label>
+                <input type="radio" id="dislike" name="feedback" value="dislike">
+                <label for="dislike">Dislike</label>
+                <select id="rating" name="rating">
+                    <option value="0" disabled selected>Select Rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </form>
+
+
+        </section>
+        <section>
+            <h2>Suggestions:</h2>
+            <textarea placeholder="Write your suggestions here..."></textarea>
+            <br>
+            <button id="submitBtn">Submit</button>
         </section>
     </main>
-
-    <!-- Link external JavaScript file -->
-    <script src="script.js"></script>
+    <footer>
+        <p><b>Email:</b> <a href="mailto:salili.jb.bscs@gmail.com">salili.jb.bscs@gmail.com</a></p>
+        <p><b>Contact:</b> <a href="tel:+639286970292">+63 928 697 0292</a></p>
+        <p>&copy; 2023 My Resume. All rights reserved.</p>
+    </footer>
 </body>
 </html>

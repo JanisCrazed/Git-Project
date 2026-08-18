@@ -1,13 +1,13 @@
 body {
-    background-color: rgb(247, 165, 165);
+    background-color: rgb(210, 216, 216);
     font-family: Arial, sans-serif;
 }
 
 #body {
     margin: auto;
     width: 80%;
-    border: 10px solid rgb(154, 231, 255);
-    background-color: rgb(191, 225, 248);
+    background-color: rgb(225, 235, 235);
+    border-radius: 12px;
     text-align: center;
     padding: 10px;
 }

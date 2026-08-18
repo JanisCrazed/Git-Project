@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+}
+
+.mail {
+    color: purple;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    background-color: #babbbb;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+
+}
+
+li {
+     list-style: none;
+}
+
+body {
+    background-color: #e1fffb;
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    width: 350px;
+    margin: auto;
+    margin-top: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 10px;
+}

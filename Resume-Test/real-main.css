@@ -14,6 +14,7 @@ nav a {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #000;
+    margin-top: 5px;
 
 }
 
@@ -35,6 +36,7 @@ main {
     border-radius: 10px;
     border: 1px solid #000;
     box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
 }
 
 p {

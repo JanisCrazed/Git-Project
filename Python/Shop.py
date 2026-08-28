@@ -1,0 +1,5 @@
+product1 = input("Enter the stock of the first product: ")
+price1 = input("Enter the price of the first product: ")
+sold1 = input("Enter the number of units sold for the first product: ")
+earning  = int(sold1) * (float(price1)) 
+print(f"Earnings for the first product: {earning}, Stock remaining: {(int(product1)) - int(sold1)}" )

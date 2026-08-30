@@ -8,13 +8,16 @@
 
 nav a {
     text-decoration: none;
+    width: 50;
+    height: 50;
     color: inherit;
-    display: inline-block;
-    background-color: #babbbb;
+    display: block;
+    background-color: #929292;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #000;
     margin-top: 5px;
+    position: sticky;
 
 }
 
@@ -27,11 +30,11 @@ body {
     text-align: center;
 }
 
-main {
+div {
     background-color: #fff;
     width: 350px;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #000;

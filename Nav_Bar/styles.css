@@ -1,0 +1,29 @@
+
+div{
+    background-color: rgb(45, 45, 45);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    right: 175px;
+}
+
+.li {
+    list-style-type: none;
+    background-color: rgb(75, 75, 75);
+    border-radius: 6px;
+}
+
+a, .li{
+    text-decoration: none;
+    color: aliceblue; 
+    display: inline-block;
+    width: 40px;
+}
+
+a:hover{
+    background-color:aliceblue;
+    color: black;
+}

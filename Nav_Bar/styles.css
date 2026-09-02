@@ -1,29 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: gray;
+}
 
-div{
-    background-color: rgb(45, 45, 45);
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    border-radius: 12px;
-    position: fixed;
-    top: 10px;
-    right: 175px;
+main {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
+
+div {
+  background-color: rgb(45, 45, 45);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  border-radius: 12px;
+  position: fixed;
+  top: 10px;
+  right: 175px;
 }
 
 .li {
-    list-style-type: none;
-    background-color: rgb(75, 75, 75);
-    border-radius: 6px;
+  list-style-type: none;
+  background-color: rgb(75, 75, 75);
+  border-radius: 6px;
 }
 
-a, .li{
-    text-decoration: none;
-    color: aliceblue; 
-    display: inline-block;
-    width: 40px;
+a,
+.li {
+  text-decoration: none;
+  color: aliceblue;
+  display: inline-block;
+  width: 40px;
 }
 
-a:hover{
-    background-color:aliceblue;
-    color: black;
+a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+footer {
+  background-color: gray;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+summary::after {
+  content: "›";
+  font-size: 16px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  transition: transform 0.1s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(-90deg); /* Points UP when opened */
+}
+
+/* Container needs relative positioning so the bubble aligns to it */
+.popover-details {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the summary button */
+.popover-details summary {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+
+.popover-details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* The Chat Bubble Body */
+.chat-bubble {
+  position: absolute;
+  top: 100%; /* Positions the bubble right below the summary */
+  left: 135px;
+  margin-top: 12px; /* Leaves room for the top pointer arrow */
+
+  width: 50px;
+  padding: 16px;
+  background-color: #ffffff;
+  color: #1f2937;
+  border-radius: 12px;
+
+  /* Creates a floating card/bubble effect */
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.15),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* The Top Arrow Pointer (pointing UP towards the button) */
+.chat-bubble::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* Pulls triangle above the bubble top edge */
+  left: 12px; /* Aligns triangle towards the left side/button */
+
+  /* Drawn using transparent CSS borders */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white; /* Same color as bubble background */
 }

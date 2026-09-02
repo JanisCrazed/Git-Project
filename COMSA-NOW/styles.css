@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(218, 236, 252);
+    justify-content: center; /* Centers horizontally (left-to-right) */
+    align-items: center;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+    background: linear-gradient(rgb(174, 255, 178), aliceblue);
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.30);
+}
+
+#header-nav{
+    padding-right: 1px;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+#login {
+    background: linear-gradient(to right,rgb(25, 174, 25), green);
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 16px;
+}
+
+#login:hover{
+    background: linear-gradient(to right,rgb(120, 210, 120), rgb(101, 196, 101))
+}
+
+.img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+#home{
+    left: 50%;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#pre-content{
+    margin: 5px 10px;
+    text-align: left;
+}
+
+#read-more-btn {
+    background: linear-gradient(to right,rgb(25, 174, 25), green);
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#div-read-more-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-tab{
+    color:darkgray
+}
+#about-head h2, #about-head p{
+    margin: 0;
+}
+#about-head{
+    display: flex;
+    flex-direction: column;
+}

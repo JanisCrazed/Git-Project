@@ -106,6 +106,7 @@ a{
 
 #content{
     background-color: antiquewhite;
+    max-width: 500px;
     height: 500px;
 }
 
